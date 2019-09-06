@@ -18,3 +18,6 @@ except Exception as e:
     s,r = getattr(e, 'message', str(e)), getattr(e, 'message', repr(e))
     print ('s:', s, 'len(s):', len(s))
     print ('r:', r, 'len(r):', len(r))
+    
+    
+# ***** repr(e) gives you the exception(and the message string); str(e) only gives the message string  *****
